@@ -12,6 +12,7 @@ if (flutterRoot == null) {
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
@@ -23,7 +24,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "me.danics.firestoretest"
+        applicationId "com.arefinForked.flutterGram"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
@@ -50,6 +51,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
     implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
 
 }
 apply plugin: 'com.google.gms.google-services'

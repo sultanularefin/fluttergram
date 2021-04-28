@@ -1,4 +1,4 @@
-package me.danics.firestoretest;
+package com.arefinForked.flutterGram;
 
 import io.flutter.embedding.android.FlutterActivity;
 
